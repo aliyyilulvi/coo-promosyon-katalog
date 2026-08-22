@@ -1,0 +1,36 @@
+COO PROMOSYON — TEK SAYFA ÜRÜN KATALOĞU
+==========================================
+
+Bu klasör tamamen statik (sunucu gerektirmeyen) bir web sitesidir.
+İçinde:
+  - index.html        -> Sitenin kendisi (310 ürün kartı, kategori filtresi, arama)
+  - assets/img/        -> Katalogdan çekilen ürün görselleri (310 adet)
+  - assets/favicon.svg -> Site logosu / sekme ikonu
+  - assets/products.json -> Ürün verisinin ham listesi (yedek/referans amaçlı)
+
+ÜCRETSİZ YAYINLAMA (birkaç seçenek):
+--------------------------------------
+1) Netlify Drop (en kolay, hesap bile gerekmez):
+   https://app.netlify.com/drop adresine gidin, bu klasörü (site) tamamını
+   sürükleyip bırakın. Saniyeler içinde canlı bir link alırsınız.
+
+2) GitHub Pages:
+   Bu klasörü bir GitHub reposuna yükleyin, Settings > Pages kısmından
+   yayınlayın. (github.com ücretsiz hesapla)
+
+3) Cloudflare Pages / Vercel:
+   Aynı şekilde bu klasörü sürükle-bırak ile yayınlayabilirsiniz.
+
+NASIL DÜZENLERİM?
+--------------------------------------
+- Metinleri (başlık, iletişim bilgileri, telefon/e-posta) index.html içinde
+  "footer" ve "hero" bölümlerinde arayıp düzenleyebilirsiniz.
+- Renkleri değiştirmek için index.html en üstteki <style> bloğunda
+  ":root" içindeki --emerald-... ve --gold-... renk kodlarını değiştirin.
+- Yeni ürün eklemek/çıkarmak için ilgili <article class="card">...</article>
+  bloğunu kopyalayıp düzenleyebilir veya silebilirsiniz.
+
+NOT: Ürün görselleri "Promosyon-Katalogu-2026.pdf" dosyasından otomatik
+olarak sayfa sayfa çekilmiştir; bazı sayfalarda birden fazla ürün/varyant
+(renk/ebat) birlikte gösterildiği için o kartlarda birden fazla ürün kodu
+listelenmiş olabilir.
