@@ -306,6 +306,21 @@
     main{ padding:8px 5vw 30px; }
     .grid{ grid-template-columns:repeat(auto-fill, minmax(130px,1fr)); gap:10px; }
     .card-body h3{ font-size:15.5px; }
+
+    .pills{
+      flex-wrap:nowrap;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+      padding-bottom:2px;
+      margin:0 -5vw;
+      padding-left:5vw;
+      padding-right:5vw;
+      mask-image: linear-gradient(90deg, transparent 0, #000 5vw, #000 calc(100% - 5vw), transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 5vw, #000 calc(100% - 5vw), transparent 100%);
+    }
+    .pills::-webkit-scrollbar{ display:none; }
+    .pill{ flex:none; white-space:nowrap; }
   }
 </style>
 </head>
@@ -7992,7 +8007,7 @@
   window.addEventListener('scroll', () => {
     toTop.classList.toggle('show', window.scrollY > 700);
   });
-
+<script>
   const LANG = {
     tr: {
       dir: 'ltr',
